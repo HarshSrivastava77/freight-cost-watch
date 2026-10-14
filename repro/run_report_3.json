@@ -1,0 +1,765 @@
+{
+  "retriever_backend": "minilm",
+  "top_k": 3,
+  "route_filter": true,
+  "thresholds": {
+    "own_rise_pct": 15.0,
+    "peer_gap_pct": 20.0
+  },
+  "route_weeks": 728,
+  "rule_flagged": 19,
+  "justified": 3,
+  "unexplained": 16,
+  "rows_with_fewer_than_8_prior_weeks": 49,
+  "rows_with_no_history": 7,
+  "retrieval_misses": 0,
+  "flagged_rows": [
+    {
+      "route": "Ahmedabad-Mumbai",
+      "week_of": "2025-01-20",
+      "retrieved": [
+        {
+          "note_id": "N002",
+          "score": 0.61086
+        },
+        {
+          "note_id": "N003",
+          "score": 0.591376
+        },
+        {
+          "note_id": "N006",
+          "score": 0.489413
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N002",
+          "passed": true,
+          "code": "ok"
+        },
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "outside_window"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "No (justified)",
+      "matched_note_id": "N002",
+      "valid_notes_full_scan": [
+        "N002"
+      ],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-02-24",
+      "retrieved": [
+        {
+          "note_id": "N001",
+          "score": 0.584076
+        },
+        {
+          "note_id": "N003",
+          "score": 0.555055
+        },
+        {
+          "note_id": "N009",
+          "score": 0.501508
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N001",
+          "passed": true,
+          "code": "ok"
+        },
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "outside_window"
+        },
+        {
+          "note_id": "N009",
+          "passed": false,
+          "code": "decrease"
+        }
+      ],
+      "verdict": "No (justified)",
+      "matched_note_id": "N001",
+      "valid_notes_full_scan": [
+        "N001"
+      ],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-03",
+      "retrieved": [
+        {
+          "note_id": "N001",
+          "score": 0.584485
+        },
+        {
+          "note_id": "N003",
+          "score": 0.556375
+        },
+        {
+          "note_id": "N009",
+          "score": 0.502682
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N001",
+          "passed": true,
+          "code": "ok"
+        },
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "outside_window"
+        },
+        {
+          "note_id": "N009",
+          "passed": false,
+          "code": "decrease"
+        }
+      ],
+      "verdict": "No (justified)",
+      "matched_note_id": "N001",
+      "valid_notes_full_scan": [
+        "N001"
+      ],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-10",
+      "retrieved": [
+        {
+          "note_id": "N001",
+          "score": 0.585242
+        },
+        {
+          "note_id": "N003",
+          "score": 0.55868
+        },
+        {
+          "note_id": "N009",
+          "score": 0.504793
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N001",
+          "passed": false,
+          "code": "outside_window"
+        },
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "outside_window"
+        },
+        {
+          "note_id": "N009",
+          "passed": false,
+          "code": "decrease"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-17",
+      "retrieved": [
+        {
+          "note_id": "N001",
+          "score": 0.581875
+        },
+        {
+          "note_id": "N003",
+          "score": 0.55928
+        },
+        {
+          "note_id": "N009",
+          "score": 0.503357
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N001",
+          "passed": false,
+          "code": "outside_window"
+        },
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "outside_window"
+        },
+        {
+          "note_id": "N009",
+          "passed": false,
+          "code": "decrease"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Delhi-Jaipur",
+      "week_of": "2024-11-11",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.544439
+        },
+        {
+          "note_id": "N007",
+          "score": 0.53265
+        },
+        {
+          "note_id": "N006",
+          "score": 0.494309
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "outside_window"
+        },
+        {
+          "note_id": "N007",
+          "passed": false,
+          "code": "decrease"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Delhi-Jaipur",
+      "week_of": "2024-11-18",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.548319
+        },
+        {
+          "note_id": "N007",
+          "score": 0.537312
+        },
+        {
+          "note_id": "N006",
+          "score": 0.490924
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "outside_window"
+        },
+        {
+          "note_id": "N007",
+          "passed": false,
+          "code": "decrease"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-06-23",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.577828
+        },
+        {
+          "note_id": "N006",
+          "score": 0.490284
+        },
+        {
+          "note_id": "N010",
+          "score": 0.400009
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-09-15",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.586322
+        },
+        {
+          "note_id": "N006",
+          "score": 0.485402
+        },
+        {
+          "note_id": "N010",
+          "score": 0.402827
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-10-06",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.579536
+        },
+        {
+          "note_id": "N006",
+          "score": 0.485013
+        },
+        {
+          "note_id": "N010",
+          "score": 0.397624
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-10-20",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.590268
+        },
+        {
+          "note_id": "N006",
+          "score": 0.492113
+        },
+        {
+          "note_id": "N010",
+          "score": 0.406001
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-10-27",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.586417
+        },
+        {
+          "note_id": "N006",
+          "score": 0.487142
+        },
+        {
+          "note_id": "N010",
+          "score": 0.401605
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-11-03",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.583103
+        },
+        {
+          "note_id": "N006",
+          "score": 0.486741
+        },
+        {
+          "note_id": "N010",
+          "score": 0.40003
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-11-17",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.584856
+        },
+        {
+          "note_id": "N006",
+          "score": 0.484179
+        },
+        {
+          "note_id": "N010",
+          "score": 0.403374
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-11-24",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.579649
+        },
+        {
+          "note_id": "N006",
+          "score": 0.487318
+        },
+        {
+          "note_id": "N010",
+          "score": 0.400622
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-12-01",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.576564
+        },
+        {
+          "note_id": "N006",
+          "score": 0.4827
+        },
+        {
+          "note_id": "N010",
+          "score": 0.397388
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-12-08",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.577094
+        },
+        {
+          "note_id": "N006",
+          "score": 0.483189
+        },
+        {
+          "note_id": "N010",
+          "score": 0.397675
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-12-15",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.581326
+        },
+        {
+          "note_id": "N006",
+          "score": 0.484717
+        },
+        {
+          "note_id": "N010",
+          "score": 0.402475
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    },
+    {
+      "route": "Mumbai-Pune",
+      "week_of": "2025-12-22",
+      "retrieved": [
+        {
+          "note_id": "N003",
+          "score": 0.577086
+        },
+        {
+          "note_id": "N006",
+          "score": 0.486079
+        },
+        {
+          "note_id": "N010",
+          "score": 0.40159
+        }
+      ],
+      "checks": [
+        {
+          "note_id": "N003",
+          "passed": false,
+          "code": "applies_to_peers"
+        },
+        {
+          "note_id": "N006",
+          "passed": false,
+          "code": "no_effect"
+        },
+        {
+          "note_id": "N010",
+          "passed": false,
+          "code": "no_effect"
+        }
+      ],
+      "verdict": "Yes",
+      "matched_note_id": "",
+      "valid_notes_full_scan": [],
+      "retrieval_missed_valid_note": []
+    }
+  ]
+}

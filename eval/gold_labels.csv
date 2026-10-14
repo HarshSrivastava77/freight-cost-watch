@@ -1,0 +1,26 @@
+route,week_of,expected_flagged,expected_matched_note_id,category,rationale
+Delhi-Jaipur,2024-11-11,Yes,,sample,Given in sample_output_format_v2.csv. No note covers Delhi-Jaipur in Nov 2024 (N007 is May 2024 and describes improved roads).
+Ahmedabad-Mumbai,2025-01-20,No (justified),N002,sample,Given in sample. N002 festival surcharge covers exactly this week on this route.
+Mumbai-Pune,2025-09-15,Yes,,sample,Given in sample. N006 says demand was stable with no disruptions; N003 diesel rise hits all Short routes so cannot explain the +23.6% peer gap.
+Chennai-Bangalore,2025-02-24,No (justified),N001,justified,N001 flood window 2025-02-24..2025-03-08 covers this week on this route.
+Chennai-Bangalore,2025-03-03,No (justified),N001,justified,Week 03-03..03-09 overlaps N001 window (ends 03-08).
+Chennai-Bangalore,2025-03-10,Yes,,trap_window,Week starts 03-10; N001 says roads passable again by Mar 9. Outside window -> unexplained.
+Chennai-Bangalore,2025-03-17,Yes,,trap_no_effect,N009 says the route returned to normal; that is not a reason for a rise. N001 window long over.
+Delhi-Jaipur,2024-11-18,Yes,,unexplained,Second elevated Delhi-Jaipur week; still no note for this route/time.
+Mumbai-Pune,2025-06-23,Yes,,trap_all_routes,Flagged on peer gap (+20.6%). N003 diesel applies to all routes incl. Delhi-Jaipur so cannot explain Mumbai-Pune being above its peer.
+Mumbai-Pune,2025-10-06,Yes,,trap_all_routes,Peer-gap flag; only all-route notes apply (N003 increase but hits peers too; N006 no effect).
+Mumbai-Pune,2025-10-20,Yes,,unexplained,Peer-gap flag; no route-specific note.
+Mumbai-Pune,2025-10-27,Yes,,trap_no_effect,N010 tracking mandate starts this week but was absorbed without a rate change -> cannot justify.
+Mumbai-Pune,2025-11-17,Yes,,unexplained,Peer-gap flag; no route-specific note.
+Mumbai-Pune,2025-12-22,Yes,,unexplained,Peer-gap flag; no route-specific note.
+Ahmedabad-Mumbai,2025-01-27,No,,not_flagged,Week after the festival; cost back below baseline.
+Ahmedabad-Mumbai,2025-01-13,No,,not_flagged,Week before the festival; small rise only.
+Delhi-Jaipur,2024-05-20,No,,not_flagged,N007 week; cost slightly down -- consistent with improved roads; nothing to flag.
+Mumbai-Delhi,2024-07-29,No,,not_flagged,N005 maintenance week; note says costs not significantly affected and indeed they were flat.
+Kolkata-Bhubaneswar,2025-06-09,No,,not_flagged,N008 week; flat costs.
+Delhi-Chennai,2025-05-05,No,,not_flagged,First diesel week (N003); +6.2% is inside the 5-7% the note describes and below thresholds.
+Mumbai-Delhi,2025-05-12,No,,not_flagged,Diesel period; +11.6% below 15% own threshold and peer gap small.
+Mumbai-Pune,2024-01-01,No,,edge_first_week,First week of data: no own history -> vs_own N/A -> cannot be 'rising' -> not flagged.
+Mumbai-Delhi,2024-03-11,No,,not_flagged,N004 week; toll plaza not on any dataset route; costs flat.
+Kolkata-Bhubaneswar,2025-03-03,No,,not_flagged,Medium peer of Chennai-Bangalore during the flood; its own cost was normal.
+Mumbai-Pune,2025-11-10,No,,edge_not_rising,+21.4% vs peers but -0.1% vs own history: above peers but not rising -> rule says not flagged.

@@ -1,0 +1,31 @@
+{
+  "gold_rows": 25,
+  "flagged_accuracy": 1.0,
+  "matched_note_accuracy": 1.0,
+  "exact_row_accuracy": 1.0,
+  "by_category": {
+    "edge_first_week": "1/1",
+    "edge_not_rising": "1/1",
+    "justified": "2/2",
+    "not_flagged": "9/9",
+    "sample": "3/3",
+    "trap_all_routes": "2/2",
+    "trap_no_effect": "2/2",
+    "trap_window": "1/1",
+    "unexplained": "4/4"
+  },
+  "sample_rows_exact_match": "3/3",
+  "output_rows": 728,
+  "flag_counts": {
+    "No": 709,
+    "Yes": 16,
+    "No (justified)": 3
+  },
+  "cited_notes": [
+    "N001",
+    "N002"
+  ],
+  "guardrail_violations": 0,
+  "failures": [],
+  "result": "PASS"
+}

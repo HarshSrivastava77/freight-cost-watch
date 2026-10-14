@@ -1,0 +1,8 @@
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3      # TF-IDF fallback encoder
+faiss-cpu>=1.7
+pytest>=7.0
+# Intended embedding backend. Optional: if it can't load (not installed, or the
+# model can't be downloaded) the retriever falls back to TF-IDF automatically.
+sentence-transformers>=2.2

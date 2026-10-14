@@ -1,0 +1,172 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "temperature": 0.0,
+  "seed": 42,
+  "max_output_tokens_per_call": 400,
+  "llm_calls": 19,
+  "total_input_tokens": 4688,
+  "total_output_tokens": 3007,
+  "validator_rejections": 0,
+  "call_errors": 0,
+  "template_fallbacks": 0,
+  "price_usd_per_1m_tokens": {
+    "input": 0.075,
+    "output": 0.3
+  },
+  "cost_usd": 0.0012537,
+  "calls": [
+    {
+      "row": "Ahmedabad-Mumbai 2025-01-20",
+      "input_tokens": 284,
+      "output_tokens": 65,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Chennai-Bangalore 2025-02-24",
+      "input_tokens": 297,
+      "output_tokens": 93,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Chennai-Bangalore 2025-03-03",
+      "input_tokens": 297,
+      "output_tokens": 75,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Chennai-Bangalore 2025-03-10",
+      "input_tokens": 238,
+      "output_tokens": 195,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Chennai-Bangalore 2025-03-17",
+      "input_tokens": 238,
+      "output_tokens": 172,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Delhi-Jaipur 2024-11-11",
+      "input_tokens": 239,
+      "output_tokens": 173,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Delhi-Jaipur 2024-11-18",
+      "input_tokens": 239,
+      "output_tokens": 171,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-06-23",
+      "input_tokens": 238,
+      "output_tokens": 172,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-09-15",
+      "input_tokens": 238,
+      "output_tokens": 143,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-10-06",
+      "input_tokens": 238,
+      "output_tokens": 257,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-10-20",
+      "input_tokens": 238,
+      "output_tokens": 123,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-10-27",
+      "input_tokens": 238,
+      "output_tokens": 172,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-11-03",
+      "input_tokens": 238,
+      "output_tokens": 151,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-11-17",
+      "input_tokens": 238,
+      "output_tokens": 143,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-11-24",
+      "input_tokens": 238,
+      "output_tokens": 257,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-12-01",
+      "input_tokens": 238,
+      "output_tokens": 243,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-12-08",
+      "input_tokens": 238,
+      "output_tokens": 127,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-12-15",
+      "input_tokens": 238,
+      "output_tokens": 103,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    },
+    {
+      "row": "Mumbai-Pune 2025-12-22",
+      "input_tokens": 238,
+      "output_tokens": 172,
+      "validator_accepted": true,
+      "validator_problem": "",
+      "error": ""
+    }
+  ]
+}

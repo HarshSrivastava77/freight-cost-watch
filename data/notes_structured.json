@@ -1,0 +1,116 @@
+{
+  "_meta": {
+    "source": "data/context_notes.csv",
+    "how_built": "One entry per note, written by hand from the note text. The pipeline never infers these fields with an LLM. 'basis' records why each field was chosen so a reviewer can re-check it against the note.",
+    "fields": {
+      "routes": "Routes the note applies to, as 'Origin-Destination'. ['ALL'] means every route in the dataset.",
+      "window_start": "First date the effect applies (inclusive, ISO).",
+      "window_end": "Last date the effect applies (inclusive, ISO). null = open-ended / still in force.",
+      "effect": "increase | no_effect | decrease. Only 'increase' can ever justify a flag.",
+      "max_effect_pct": "Largest cost rise the note can plausibly explain. null = the note gives no figure (a sanity cap from config applies).",
+      "summary": "Short paraphrase used in template explanations."
+    }
+  },
+  "notes": [
+    {
+      "note_id": "N001",
+      "routes": ["Chennai-Bangalore"],
+      "window_start": "2025-02-24",
+      "window_end": "2025-03-08",
+      "effect": "increase",
+      "max_effect_pct": null,
+      "summary": "highway flooding forced detours and raised trip costs on Chennai-Bangalore",
+      "basis": "Text: 'disrupted normal truck movement from Feb 24 to Mar 8 ... higher trip costs. Roads were passable again by Mar 9.' Window ends Mar 8, so the week of 2025-03-10 is outside it. No % given."
+    },
+    {
+      "note_id": "N002",
+      "routes": ["Ahmedabad-Mumbai"],
+      "window_start": "2025-01-20",
+      "window_end": "2025-01-26",
+      "effect": "increase",
+      "max_effect_pct": null,
+      "summary": "a regional festival week brought a temporary transporter surcharge on Ahmedabad-Mumbai",
+      "basis": "Dated 2025-01-20 (a Monday), describes 'a regional festival week' -> that Monday-Sunday week only. 'temporary surcharge' -> increase. No % given."
+    },
+    {
+      "note_id": "N003",
+      "routes": ["ALL"],
+      "window_start": "2025-05-05",
+      "window_end": null,
+      "effect": "increase",
+      "max_effect_pct": 7.0,
+      "summary": "a nationwide diesel price rise pushed costs up roughly 5-7% on all routes",
+      "basis": "'Diesel prices rose nationwide starting this week ... across all routes by roughly 5-7%.' Starts 2025-05-05, no end given -> open-ended. Upper bound 7%. Because it hits every route, it cannot explain one route rising above its peers."
+    },
+    {
+      "note_id": "N004",
+      "routes": ["ALL"],
+      "window_start": "2024-03-11",
+      "window_end": "2024-03-17",
+      "effect": "no_effect",
+      "max_effect_pct": 0.0,
+      "summary": "a new toll plaza opened on a highway stretch not used by any route in this dataset",
+      "basis": "'the affected routes are not part of this dataset' -> no effect on any route here."
+    },
+    {
+      "note_id": "N005",
+      "routes": ["Mumbai-Delhi"],
+      "window_start": "2024-07-29",
+      "window_end": "2024-08-04",
+      "effect": "no_effect",
+      "max_effect_pct": 0.0,
+      "summary": "highway maintenance caused minor delays between Mumbai and Delhi without significantly affecting costs",
+      "basis": "'minor delays for about a week; costs were not significantly affected.' -> one week, no effect."
+    },
+    {
+      "note_id": "N006",
+      "routes": ["ALL"],
+      "window_start": "2025-07-01",
+      "window_end": "2025-09-30",
+      "effect": "no_effect",
+      "max_effect_pct": 0.0,
+      "summary": "an industry report said freight demand stayed stable with no major disruptions",
+      "basis": "Dated 2025-09-22, 'this quarter' -> Q3 2025. 'stable ... no major disruptions' is evidence against a cost rise."
+    },
+    {
+      "note_id": "N007",
+      "routes": ["Delhi-Jaipur"],
+      "window_start": "2024-05-20",
+      "window_end": null,
+      "effect": "decrease",
+      "max_effect_pct": 0.0,
+      "summary": "road conditions on Delhi-Jaipur improved after resurfacing",
+      "basis": "Improved road conditions after resurfacing -> if anything lowers cost; persists, so open-ended. Can never justify a rise."
+    },
+    {
+      "note_id": "N008",
+      "routes": ["Kolkata-Bhubaneswar"],
+      "window_start": "2025-04-01",
+      "window_end": "2025-06-30",
+      "effect": "no_effect",
+      "max_effect_pct": 0.0,
+      "summary": "no significant disruptions on Kolkata-Bhubaneswar; freight moved normally",
+      "basis": "Dated 2025-06-09, 'this quarter' -> Q2 2025. Explicitly no disruption."
+    },
+    {
+      "note_id": "N009",
+      "routes": ["Chennai-Bangalore"],
+      "window_start": "2025-03-17",
+      "window_end": "2025-03-23",
+      "effect": "decrease",
+      "max_effect_pct": 0.0,
+      "summary": "Chennai-Bangalore returned to normal conditions after flood repairs",
+      "basis": "Confirms a return to normal -> evidence costs should NOT be elevated. Trap: same route as N001 but it explains nothing about a rise."
+    },
+    {
+      "note_id": "N010",
+      "routes": ["ALL"],
+      "window_start": "2025-10-27",
+      "window_end": null,
+      "effect": "no_effect",
+      "max_effect_pct": 0.0,
+      "summary": "a new vehicle tracking mandate's compliance costs were absorbed by transporters without a rate change",
+      "basis": "'absorbed by transporters without a rate change' -> explicitly no effect on freight rates."
+    }
+  ]
+}

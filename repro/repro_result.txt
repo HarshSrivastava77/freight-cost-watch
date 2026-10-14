@@ -1,0 +1,9 @@
+repro check: 3 runs, run.py args: (default)
+run 1 vs run 2: identical on 7 columns x 728 rows
+run 1 vs run 2: reason column differs (allowed)
+run 1 vs run 3: identical on 7 columns x 728 rows
+run 1 vs run 3: reason column differs (allowed)
+run 1 sha256(non-reason columns) = bca6f15d253acb35
+run 2 sha256(non-reason columns) = bca6f15d253acb35
+run 3 sha256(non-reason columns) = bca6f15d253acb35
+RESULT: PASS
